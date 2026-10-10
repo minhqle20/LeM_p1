@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    background: #000000;
+    color: #cfcaca;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 32px 160px;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+h1,h2,h3{
+    font-family: "Space Mono",monospace;
+    line-height: 1.2;
+}
+h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+header,main{
+    width: min(100- 2rem,70rem);
+    margin-inline: auto;
+}
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap:2rem;
+    padding-block: 2rem;
+}
+.site-logo{
+    color: #ff0000;
+    font-family: "Space Mono",monospace;
+    font-size: 60px;
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 1;
+    text-decoration: none;
+}
+.nav-list{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.75rem;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.nav-list a{
+    color: #ffffff;
+    font-family: "Space Mono",monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+.nav-list a:hover{
+    color: #ff0000;
+}
+.about-hero{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 20px 0;
+}
+.monk-image, .side-content{
+    flex: 1;
+    min-width: none;
+}
+.monk-image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.side-content{
+    text-align: center;
+}
+.hero-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;
+}
+.hero-buttons a{
+    padding: 15px 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.hero-buttons a:hover{
+    background-color: #ffffff;
+    color:#ff0000;
+}
+.featured{
+    padding: 20px 0;
+    border-top: 1px solid #CFCACA;
+}
+.featured-release{
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;
+}
+.featured-release img{
+    width: 20%;
+    height: auto;
+}
+.featured a{
+    display: inline-block;
+    padding: 15px 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.featured a:hover{
+    background-color: #ffffff;
+    color:#ff0000;
+}
+.meet-monk{
+    padding: 20px 0;
+    border-top: 1px solid #CFCACA;
+}
+.meet-monk-release{
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.meet-monk-release img{
+    width: 30%;
+    height: auto;
+}
+.meet-monk a{
+    display: inline-block;
+    padding: 15px 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.meet-monk a:hover{
+    background-color: #ffffff;
+    color:#ff0000;
+}
+.explore-section{
+    padding: 20px 0;
+    border-top: 1px solid #CFCACA;
+    display: flex;
+    gap: 30px;
+}
+.explore-cards{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border: 1px solid #CFCACA;
+    border-radius: 6px;
+    align-items: center;
+}
+.explore-cards img{
+    width: 500px;
+    height: 300px;
+    border-radius: 3px;
+}
+.explore-cards a:hover{
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/*Biography */
+.biography-page{
+    width: 100%;
+    margin: 0 auto;
+}
+.biography-page h2{
+    margin: 0 0 20px;
+    font-size: 36px;
+    font-weight: 700;
+}
+.biography-page h3{
+    margin: 0 0 15px;
+    font-size: 24px;
+}
+.biography-page p{
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.biography-banner img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.biography-banner h1{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 80px;
+    text-align: center;
+}
+.biography-section{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px;
+    border-bottom: 1px solid #CFCACA;
+}
+.biography-content{
+    flex: 1;
+    min-width: 0;
+}
+.biography-image{
+    width: 35%;
+    height: auto;
+}
+.biography-section .image-left{
+    flex-direction: row-reverse;
+}
+.poster-image{
+    width: 25%;
+    height: auto;
+}
+.style-features{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 25px;
+}
+.style-feature{
+    flex: auto;
+    min-width: 0;
+}
+.style-feature h3{
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+.breakthrough-section{
+    padding: 40px 20px;
+    border-bottom: 1px solid #CFCACA;
+}
+.biography-albums{
+    display: flex;
+    gap: 25px;
+    margin: 30px 0;
+}
+.biography-album{
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+.biography-album img{
+    width: 100%;
+}
+.biography-album p{
+    font-size: 20px;
+}
+.world-stage-section{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px;
+    border-bottom: 1px solid #CFCACA;
+}
+.monk-timeline{
+    padding-left: 30px;
+    border-left: 5px solid #cfcaca;
+}
+.timeline-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px; 
+}
+.legacy-section{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+.legacy-content{
+    padding: 0 0 30px;
+}
+.final-years{
+    margin-bottom: 40px;
+}
+.biography-button{
+    padding: 15px 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+.biography-button:hover{
+    background-color: #ffffff;
+    color:#ff0000;
+}
+/*Music */
+.music-page{
+    width: 100%;
+    margin: 0 auto;
+}
+.music-page h1{
+    margin: 0 0 15px;
+    font-size: 36px;
+}
+.music-page h2{
+    margin: 0 0 20px;
+    font-size: 36px;
+    font-weight: 700;
+}
+music-page h3{
+    margin: 0 0 15px;
+    font-size: 28px;
+}
+.music-page h4{
+    margin: 0 0 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    line-height: 1.3;
+}
+.music-page p{
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.music-banner img{
+    margin: 20px 0 35px;
+}
+.music-banner img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.music-intro{
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+.music-release{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 25px 40px;
+}
+.music-release-content{
+    flex: 1;
+    min-width: 0;
+}
+.music-release-image{
+    flex: 1;
+    min-width: 0;
+    max-width: 420px;
+}
+.music-release-image img{
+    width: 100%;
+    height: auto;
+}
+.music-release.image-left{
+    flex-direction: row-reverse;
+}
+.music-tracklists{
+    display: flex;
+    gap: 30px;
+}
+.music-page ul{
+    margin: 0 0 20px;
+    padding-left: 20px;
+}
+.music-page li{
+    margin-bottom: 5px;
+}
+.music-tracklists ul{
+    flex: 1;
+    min-width: 0;
+}
+.music-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+.music-buttons a{
+    display: inline-block;
+    padding: 15px 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.music-buttons a:hover{
+    color: #ff0000;
+    text-decoration: none;
+}
+.recording-section{
+    max-width: 800px;
+    padding: 30px 0;
+}
+.recording-section.music-buttons{
+    justify-content: flex-start;
+}
+/*GUESBOOK*/
+.guestbook-page{
+    width: 100%;
+    margin: 0 auto;
+}
+.guestbook-banner{
+    margin-top: 20px;
+}
+.guestbook-banner img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.guestbook-message{
+    padding-bottom: 20px;
+}
+.message-row{
+    display: flex;
+    align-items: stretch;
+    gap: 25px;
+    margin-bottom: 25px;
+    padding: 0 6px 10px 0;
+    overflow-x: auto;
+}
+.message-card{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+    min-width: 0;
+    min-height: 240px;
+    padding: 30px 20px;
+    border-radius: 6px;
+    background-color: #383838;
+    color: #ffffff;
+    overflow-wrap: break-word;
+}
+.message-author{
+    align-self: flex-end;
+    margin-top: auto;
+    padding-top: 25px;
+}
+.guestbook-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    
+}
+.guestbook-button {
+    display: inline-block;
+    padding: 15px 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.guestbook-button:hover{
+    color: #ff0000;
+    text-decoration: none;
+}
+.leave-your-mark{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 0;
+}
+.leave-your-mark-content .guestbook-buttons{
+    margin-top: 30px;
+}
+.guestbook-community-image{
+    width: 35%;
+}
+/*COMMUNITY PAGE */
+.community-intro{
+    padding: 40px 0;
+    text-align: center;
+}
+.community-about{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0;
+    border-top: 1px solid #CFCACA;
+}
+.community-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.community-cards{
+    display: flex;
+    gap: 30px;
+    padding: 40px 0;
+    border-top: 1px solid #cfcaca;
+}
+.community-card{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid #cfcaca;
+    border-radius: 6px;
+}
+.community-card .community-button{
+    align-self: flex-start;
+    margin-top: auto;
+}
+.community-button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.community-button:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+footer {
+  margin-top: 20px;
+  padding: 32px 40px 48px;
+  border-radius: 16px 16px 0 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+footer .site-logo {
+  display: inline-block;
+  font-size: 64px;
+  text-decoration: none;
+}
+.site-footer p {
+  margin-top: 8px;
+  font-size: 12px;
+}
+.footer-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin:24px 0 90px ;
+}
+
+.footer-column h2 {
+  margin-bottom: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer-column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+.footer-column a:hover{
+    color: #ff0000;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 24px;
+  border-top: 2px dashed #000000;
+}
+
+.legal-links,.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.legal-links {
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.social-links img {
+  width: 50px;
+  height: 50px;
+}
+
+.mobile-menu {
+    display: none;
+}
+.copyright {
+  margin: 64px 0 0;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  text-align: center;
+}
+@media (max-width: 440px) {
+    body {
+        padding: 20px;
+    }
+
+    header,
+    main {
+        width: 100%;
+    }
+    h1,
+    .biography-banner h1,
+    .guestbook-page h1,
+    .community-intro h1 {
+        font-size: 30px;
+        overflow-wrap: break-word;
+    }
+
+    h2,
+    .biography-page h2,
+    .music-page h1,
+    .music-page h2 {
+        font-size: 26px;
+    }
+
+    .about-hero,
+    .featured-release,
+    .meet-monk-release,
+    .biography-section,
+    .biography-section.image-left,
+    .world-stage-section,
+    .legacy-section,
+    .music-release,
+    .music-release.image-left,
+    .community-about,
+    .leave-your-mark,
+    .explore-section,
+    .community-cards {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+        margin: 0;
+        padding: 25px 0;
+    }
+
+    .featured-release > img,
+    .meet-monk-release > img,
+    .biography-image,
+    .poster-image,
+    .music-release-image,
+    .guestbook-community-image {
+        flex: auto;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .explore-cards img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .biography-banner img,
+    .music-banner img,
+    .guestbook-banner img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .biography-banner {
+        position: relative;
+    }
+
+    .biography-banner h1 {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .explore-cards,
+    .community-card,
+    .monk-image,
+    .side-content {
+        min-width: 0;
+    }
+
+    .biography-albums {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .biography-album {
+        flex: 1 1 120px;
+    }
+
+    .biography-album p {
+        font-size: 14px;
+    }
+
+    .style-features,
+    .music-tracklists {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .message-card {
+        flex: 0 0 85%;
+    }
+
+    .message-content h2 {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 16px;
+    }
+
+    .message-content p,
+    .message-author p {
+        font-size: 14px;
+    }
+
+    .hero-buttons,
+    .music-buttons {
+        gap: 16px;
+        margin: 20px 0;
+    }
+    footer {
+        padding: 25px 20px;
+    }
+
+    footer .site-logo {
+        font-size: 32px;
+    }
+
+    .footer-link {
+        gap: 25px;
+        margin: 30px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .legal-links {
+        font-size: 12px;
+    }
+
+    .social-links img {
+        width: 35px;
+        height: 35px;
+    }
+}
